@@ -1,0 +1,179 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+    background: #7D89AB;
+}
+.start_block{
+    height: 700px;
+    width: 100%;
+    background: url(images/scale_1200.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -10px;
+}
+.start_block .text{
+    margin: auto;
+    max-width: 800px;
+    border-radius: 20px;
+}
+.start_block .text p{
+    font-size: 20px;
+}
+.start_block .text h3{
+    font-size: 20px;
+}
+head{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.start_block h1{
+    padding: 10px;
+    padding-top: 0px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-family: 'EFour Digital Pro', cursive;
+    font-weight: bold;
+    color: white;
+    border: solid #FFBD59 10px;
+    border-top: solid transparent 0px;
+    width: 500px;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+.yakors li a{
+    color: white;
+    background: #FFBD59;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    
+}
+.yakors li{
+    list-style: none;
+    margin-top: 13px;
+}
+.yakors {
+    font-family: 'EFour Digital Pro', cursive;
+    position: fixed; /* Фиксированное положение */
+    left: 10px; /* Расстояние от правого края окна браузера */
+    top: 20%; /* Расстояние сверху */
+    padding: 10px; /* Поля вокруг текста */ 
+    background: #FFBD59;
+    border-radius: 10px;
+}
+.start_block .text{
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    font-family: 'EFour Digital Pro', cursive;
+}
+.start_block .text h3{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.start_block .text p{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+.main_block{
+    height: 4000px;
+    background: #7D89AB;
+}
+.contact h1{
+    padding: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-family: 'EFour Digital Pro', cursive;
+    font-weight: bold;
+    color: white;
+    border: solid #FFBD59 10px;
+    border-bottom: solid transparent 0px;
+    width: 1000px;
+    border-radius: 20px 20px 0px 0px;    
+}
+.contact{
+    background: #7D89AB;
+}
+.main_block .text{
+    font-family: 'EFour Digital Pro', cursive;
+    font-size: 15px;
+    text-indent: 20px;
+    color: white;
+}
+.main_block .text_photo{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.text_photo{
+    align-items: center;  
+}
+.text_photo img{
+    outline: 10px solid #FF914D;
+    border: 10x solid #FFEDAE;   
+    border-radius: 15px;
+}
+.text_photo .text{
+    padding-left: 40px;
+    font-size: 19px;
+}
+.start_block{
+    padding-bottom: 50px;
+}
+.main_block .text_photo_zerkalo{
+    display: flex;
+}
+.text_photo_zerkalo{
+    align-items: center;  
+    
+}
+.text_photo_zerkalo img{
+    outline: 10px solid #FF914D;
+    border: 10x solid #FFEDAE;   
+    border-radius: 15px;
+}
+.text_photo_zerkalo .text{
+    padding-right: 40px;
+    font-size: 19px;
+}
+.dialog p{
+    font-family: 'EFour Digital Pro', cursive;
+    font-size: 20px;
+    color: white;
+}
+.ded{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.vnyk{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.ded p{
+    margin-left: 20px;
+}
+.vnyk p{
+    margin-left: 20px;
+}
+#m_p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
