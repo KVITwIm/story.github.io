@@ -1,29 +1,20 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Montserrat Alternates', sans-serif;
 }
 html{
     scroll-behavior: smooth;
     background: #7D89AB;
 }
-.start_block{
-    height: 700px;
-    width: 100%;
-    background: url(images/scale_1200.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -10px;
-}
-.start_block .text{
+.block .text{
     margin: auto;
     max-width: 800px;
     border-radius: 20px;
 }
-.start_block .text p{
+.block .text p{
     font-size: 20px;
 }
-.start_block .text h3{
+.block .text h3{
     font-size: 20px;
 }
 .block{
@@ -46,7 +37,7 @@ html{
     color: white;
 }
 .block .text p{
-    font-size: 16px;
+    font-size: 20px;
 }
 .block .text h3{
     font-size: 20px;
@@ -57,7 +48,11 @@ head{
     margin: auto;
     justify-content: center;
 }
-.start_block h1{
+.yakors li a:hover{
+    color: black;
+    transition: 1;
+}
+.block h1{
     padding: 10px;
     padding-top: 0px;
     text-align: center;
@@ -93,38 +88,48 @@ head{
     width: 80%;
     margin: auto;
 }
-
-p{
-    line-height: 35px;
+.yakors li a{
+    color: white;
+    background: #FFBD59;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    
 }
-
-.line{
-    display: flex;
-    justify-content: center;
-    width: 55%;
-    height: 4px;
-    background:#FFEDAE;
-    margin: auto;
-    border-radius: 2px;
+.yakors li{
+    list-style: none;
+    margin-top: 13px;
 }
-.start_block .text{
+.yakors li:first-child{
+    margin-top: 0px;
+}
+.yakors {
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: fixed; /* Фиксированное положение */
+    left: 10px; /* Расстояние от правого края окна браузера */
+    top: 20%; /* Расстояние сверху */
+    padding: 10px; /* Поля вокруг текста */ 
+    background: #FFBD59;
+    border-radius: 10px;
+}
+.block .text{
     margin-top: 100px;
     color: white;
     text-align: center;
     font-family: 'Montserrat Alternates', sans-serif;
 }
-.start_block .text h3{
+.block .text h3{
     font-size: 30px;
     color: white;
     text-align: center;
 }
-.start_block .text p{
+.block .text p{
     font-size: 15px;
     color: white;
     text-align: center;
 }
 .main_block{
-    max-height: 100%;
+    height: 100%;
     background: #7D89AB;
 }
 .contact h1{
@@ -166,7 +171,7 @@ p{
     padding-left: 40px;
     font-size: 19px;
 }
-.start_block{
+.block{
     padding-bottom: 50px;
 }
 .main_block .text_photo_zerkalo{
@@ -201,15 +206,9 @@ p{
 .vnyk p{
     margin-right: 20px;
 }
-
-.wrapper{
-    display: block;
-}
-
 #m_p{
     margin-top: 50px;
     margin-bottom: 50px;
-    text-indent: 20px;
 }
 .dialog{
     display: flex;
@@ -237,102 +236,42 @@ p{
 .photo{
     margin: 60px 0px;
 }
-.yakors li a:hover{
-    color: black;
-    transition: 1;
-}
-.yakors li a{
-    color: white;
-    background: #FFBD59;
-    padding: 4px;
-    position: relative;
-    text-decoration: none;
-    
-}
-.yakors li{
-    list-style: none;
-    margin-top: 13px;
-}
-.yakors li:first-child{
-    margin-top: 0px;
-}
-.yakors {
-    font-family: 'Montserrat Alternates', sans-serif;
-    position: fixed; /* Фиксированное положение */
-    left: 10px; /* Расстояние от правого края окна браузера */
-    top: 20%; /* Расстояние сверху */
-    padding: 10px; /* Поля вокруг текста */ 
-    background: #FFBD59;
-    border-radius: 10px;
-    z-index: 1;
-}
-.news{
-    position: absolute;
-    top: 1600px;
-    left: 3%;
-    z-index: 0;
-}
-.box:first-child{
-    max-height: 600px;
-}
-.box{
-    font-family: 'Montserrat Alternates', sans-serif;
-    max-height: 500px;
-    max-width: 200px;  
-    border: #FFBD59 5px solid;
-    border-radius: 20px;
-    background: white;
-    color: black;
-}
-.box_in_box{
-    padding: 5%;
-}
-.news2{
-    position: absolute;
-    top: 3000px;
-    right: 3%;
-}
-.news3{
-    position: absolute;
-    top: 5000px;
-    left: 3%;
-    z-index: 0;
-}
-.news4{
-    position: absolute;
-    top: 6400px;
-    right: 3%;
-}
-.news span{
-    font-weight: 300;
-}
-.news2 span{
-    font-weight: 300;
-}
-.news3 span{
-    font-weight: 300;
-}
-.news4 span{
-    font-weight: 300;
-}
 
-@media screen and (max-width: 1500px){
-    .news{
-        display: none;
-    }
-    .news2{
-        display: none;
-    }
-    .news3{
-        display: none;
-    }
-    .news4{
-        display: none;
-    }
-  }
 @media screen and (max-width: 1000px){
+    .photo_items{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .photos{
+        flex-direction: column;
+    }
+    .photos_inner{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .text_photo{
+        flex-direction: column;
+    }
+    .text_photo_zerkalo{
+        flex-direction: column;
+    }
+    .text_photo{
+        flex-direction: column;
+    }
+    .text_photo_zerkalo{
+        flex-direction: column;
+    }
+    .photos{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
    .yakors{
-       display: none;
+       display: none
    }
    .dialog p{
        font-size: 15px;
@@ -360,19 +299,22 @@ p{
         border-bottom: 0px;
         width: 600px;
     }
-    p{
-        line-height: 15px;
-    }
+ 
+ }
+
+ @media screen and (max-width: 880px){
     .yakors{
         display: block;
         position: relative;
         margin: auto;
         width: 150px;
         left: 0%;
+        margin-bottom: 100px;
     }
- }
-
- @media screen and (max-width: 880px){
+    .block{
+        max-height: 150px;
+        padding-bottom: 0px;
+    }
     .dialog p{
         font-size: 11px;
     }
@@ -387,10 +329,10 @@ p{
         width: 260px;
      }
     .text_photo p{
-         font-size: 11px;
+         font-size: 9px;
      }
     .text_photo_zerkalo p{
-         font-size: 11px;
+         font-size: 9px;
      }
     .text_photo .photo img{
         height: 160px;
@@ -400,16 +342,16 @@ p{
         height: 160px;
         width: 260px;
     }
-    .start_block h1{
+    .block h1{
         font-size: 20px;
     }
-    .start_block .text h3{
+    .block .text h3{
         font-size: 15px;
     }
-    .start_block .text p{
+    .block .text p{
         font-size: 11px;
     }
-    .start_block{
+    .block{
         height: 500px;
     }
     .contact h1{
@@ -419,22 +361,31 @@ p{
         border-bottom: 0px;
         width: 400px;
     }
-    .yakors{
-        display: block;
-        position: relative;
-        margin: auto;
-        width: 150px;
-        left: 0%;
+    .block head h1{
+        font-size: 14px;
     }
   }
 
   @media screen and (max-width: 600px){
-    .yakors{
-        display: block;
-        position: relative;
-        margin: auto;
-        width: 150px;
-        left: 0%;
+    .photo_items .item img{
+        flex-direction: column;
+        height: 160px;
+        width: 260px;
+    }
+    .photo_items{
+        flex-direction: column;
+    }
+    .photos{
+        flex-direction: column;
+    }
+    .photos_inner{
+        flex-direction: column;
+    }
+    .text_photo{
+        flex-direction: column;
+    }
+    .text_photo_zerkalo{
+        flex-direction: column;
     }
     .text_photo{
         flex-direction: column;
@@ -445,23 +396,23 @@ p{
     .text_photo .text{
         padding-left: 0px;
     }
-    .start_block h1{
+    .block h1{
         padding: 0px;
         font-size: 15px;
         border: 3px solid #FFBD59;
         border-top: 0px;
         width: 300px;
     }
-    .start_block{
+    .block{
         margin: auto;
     }
-    .start_block{
+    .block{
         height: 300px;
     }
-    .start_block .text h3{
+    .block .text h3{
         font-size: 11px;
     }
-    .start_block .text p{
+    .block .text p{
         font-size: 8px;
     }
     .contact h1{
@@ -474,39 +425,98 @@ p{
     .ya-share2{
         transform: scale(0.5);
     }
-  }
-
-  @media screen and (max-width: 420px){
+    .yakors{
+        display: block;
+        position: relative;
+        margin: auto;
+        width: 150px;
+        left: 0%;
+        margin-bottom: 100px;
+    }
+    .photo_items{
+        flex-direction: column;
+    }
+    .photos{
+        flex-direction: column;
+    }
+    .photos_inner{
+        flex-direction: column;
+    }
     .text_photo{
         flex-direction: column;
     }
     .text_photo_zerkalo{
         flex-direction: column;
     }
-    .line{
-        width: 80%;
+    .text_photo{
+        flex-direction: column;
+    }
+    .text_photo_zerkalo{
+        flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 420px){
+    .photo_items .item img{
+        flex-direction: column;
+        height: 100px;
+        width: 200px;
+    }
+    .photo_items{
+        flex-direction: column;
+    }
+    .photos{
+        flex-direction: column;
+    }
+    .photos_inner{
+        flex-direction: column;
+    }
+    .text_photo{
+        flex-direction: column;
+    }
+    .text_photo_zerkalo{
+        flex-direction: column;
+    }
+    .text_photo{
+        flex-direction: column;
+    }
+    .text_photo_zerkalo{
+        flex-direction: column;
     }
     .text_photo .text{
         padding-left: 0px;
     }
-    .start_block h1{
+    .block h1{
         padding: 0px;
         font-size: 17px;
         border: 3px solid #FFBD59;
         border-top: 0px;
         width: 300px;
     }
-    .start_block{
+    .block{
         margin: auto;
     }
-    .start_block{
-        height: 300px;
+    .block{
+        height: 80px;
     }
-    .start_block .text h3{
+    .yakors{
+        display: block;
+        position: relative;
+        margin: auto;
+        width: 150px;
+        left: 0%;
+        margin-bottom: 100px;
+    }
+    .block .text h3{
         font-size: 15px;
     }
-    .start_block .text p{
+    .block .text p{
         font-size: 12px;
+    }
+    .img-adaptive{
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
     .contact h1{
         padding: 0px;
@@ -515,17 +525,17 @@ p{
         border-bottom: 0px;
         width: 300px;
     }
-   .text_photo .photo img{
+    img{
        height: 160px;
        width: 260px;
        box-shadow:  0 0 0 6px #FFEDAE, 0 0 0 12px #FFBD59;
    }
-   .text_photo_zerkalo .photo img{
+   img{
        height: 160px;
        width: 260px;
        box-shadow:  0 0 0 6px #FFEDAE, 0 0 0 12px #FFBD59;
    }
-   .photo img{
+    img{
     box-shadow:  0 0 0 6px #FFEDAE, 0 0 0 12px #FFBD59;
    }
    .dialog .photo{
@@ -534,7 +544,13 @@ p{
     margin: auto;
     margin: 60px 0px;
    }
-  }
+   .block h1{
+       font-size: small;
+   }
+}
+
+
+
   .photos{
       display: flex;
       justify-content: center;
